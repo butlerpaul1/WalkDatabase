@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "508310799999",
+    "firebase_url": "https://intelligent-walk-database.firebaseio.com",
+    "project_id": "intelligent-walk-database",
+    "storage_bucket": "intelligent-walk-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508310799999:android:faae539f1af6ac5e",
+        "android_client_info": {
+          "package_name": "com.example.paul.walkdatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508310799999-f4u9qfo8i47ifdmjuoan3ep90bqv431n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paul.walkdatabase",
+            "certificate_hash": "3a28d8eee9791338016d2bab8cb892c68f8f8f40"
+          }
+        },
+        {
+          "client_id": "508310799999-375o39i7lslnd9grrbjtg3ksf9am0u8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfVJLMJSs83WCCXYhSr3m5bBM-QUAmsWo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508310799999-375o39i7lslnd9grrbjtg3ksf9am0u8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
