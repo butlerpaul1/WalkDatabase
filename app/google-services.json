@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "508310799999-8gs57f23jcot2hd9t0uk04el3d938qrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paul.walkdatabase",
+            "certificate_hash": "b0e0429e2324065e02b99fadcff1fe83dde223b6"
+          }
+        },
+        {
           "client_id": "508310799999-f4u9qfo8i47ifdmjuoan3ep90bqv431n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

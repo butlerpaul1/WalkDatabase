@@ -39,6 +39,14 @@
     <string name="btn_view_fav_walks">View Favourites Walks</string>
     <string name="btn_view_completed_walks">View Completed Walks</string>
     <string name="btn_view_suggested_walks">View Suggested Walks</string>
+    <string name="btn_add_walk">Add Walk</string>
+
+    <string name="hint_walk_name">Add Walk Name</string>
+    <string name="hint_walk_format">Add Walk Format</string>
+    <string name="hint_walk_diff">Add Walk Diffuctly</string>
+    <string name="hint_walk_length">Add Walk Length</string>
+
+
 
 
 

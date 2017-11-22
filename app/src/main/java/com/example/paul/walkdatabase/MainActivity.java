@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button viewWalks, favWalks, completedWalks,suggestedWalks, signOut, settings;
+    private Button viewWalks, addWalk, favWalks, completedWalks,suggestedWalks, signOut, settings;
 
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         signOut = (Button) findViewById(R.id.sign_out);
         settings = (Button) findViewById(R.id.settings);
+        viewWalks = (Button) findViewById(R.id.view_walks);
+        addWalk = (Button) findViewById(R.id.add_walk);
+
 
         /*Settings*/
         settings.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +65,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
         });
+
+        /*Add walk*/
+        addWalk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AddWalk.class));
+            }
+        });
+
 
 
 
