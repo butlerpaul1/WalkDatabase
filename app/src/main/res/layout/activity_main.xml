@@ -55,7 +55,8 @@
             android:background="@color/colorPrimary"
             android:text="@string/btn_view_fav_walks"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/completed_walks"
@@ -66,7 +67,8 @@
             android:background="@color/colorPrimary"
             android:text="@string/btn_view_completed_walks"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"/>
         <Button
             android:id="@+id/suggested_walks"
             style="?android:textAppearanceSmall"
@@ -76,7 +78,8 @@
             android:background="@color/colorPrimary"
             android:text="@string/btn_view_suggested_walks"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/add_walk"

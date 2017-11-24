@@ -53,22 +53,22 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="@string/hint_password"
             android:inputType="textPassword"
+            android:singleLine="true"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white" />
-        android:id="@+id/newPassword"
 
         <EditText
             android:id="@+id/newPassword"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
+            android:singleLine="true"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white" />
 

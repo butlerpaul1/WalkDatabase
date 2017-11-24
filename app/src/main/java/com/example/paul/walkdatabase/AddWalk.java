@@ -47,7 +47,7 @@ public class AddWalk extends AppCompatActivity {
         setContentView(R.layout.add_walk);
 
         //create instance that points to database
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Roscommon");
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         mFirebaseBtn = (Button) findViewById(R.id.firebase_btn);
 
@@ -56,18 +56,7 @@ public class AddWalk extends AppCompatActivity {
         walkFormat = (EditText) findViewById(R.id.walk_format);
         walkLength = (EditText) findViewById(R.id.walk_length);
 
-        addWalk.setVisibility(View.GONE);
-        walkDiff.setVisibility(View.GONE);
-        walkFormat.setVisibility(View.GONE);
-        walkLength.setVisibility(View.GONE);
 
-
-
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
-
-        if (progressBar != null) {
-            progressBar.setVisibility(View.GONE);
-        }
 
 
 
@@ -77,30 +66,23 @@ public class AddWalk extends AppCompatActivity {
 
                 //create child in root object
                 //assign values in that child
-                addWalk.setVisibility(View.VISIBLE);
-                walkDiff.setVisibility(View.VISIBLE);
-                walkFormat.setVisibility(View.VISIBLE);
-                walkLength.setVisibility(View.VISIBLE);
 
 
 
 
                 if (!addWalk.getText().toString().trim().equals("")) {
 
-
-
                             String walkName = addWalk.getText().toString().trim();
                             String difficultly = walkDiff.getText().toString().trim();
                             String format = walkFormat.getText().toString().trim();
-
+/*
                             HashMap<String, String> dataMap = new HashMap<String, String>();
                             dataMap.put("Format", format);
                             dataMap.put("Difficultly", difficultly);
+*/
 
 
-
-
-                    mDatabase.child(walkName).setValue(dataMap)
+                    mDatabase.push().setValue(walkName)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -110,19 +92,16 @@ public class AddWalk extends AppCompatActivity {
                                         walkDiff.setText(null);
                                         walkFormat.setText(null);
 
-
-                                        progressBar.setVisibility(View.GONE);
                                     } else {
                                         Toast.makeText(AddWalk.this, "Failed to add walk!", Toast.LENGTH_SHORT).show();
-                                        progressBar.setVisibility(View.GONE);
                                     }
                                 }
                             });
 
 
 
+
                     //Toast.makeText(AddWalk.this, "It works", Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.GONE);
                 }
                 else{
                     Toast.makeText(AddWalk.this, "Please enter  some data", Toast.LENGTH_LONG).show();

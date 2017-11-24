@@ -74,6 +74,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*View walks*/
+        viewWalks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ViewWalks.class));
+            }
+        });
+
 
 
 
