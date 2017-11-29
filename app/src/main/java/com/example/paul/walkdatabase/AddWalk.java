@@ -57,6 +57,9 @@ public class AddWalk extends AppCompatActivity {
         walkLength = (EditText) findViewById(R.id.walk_length);
 
 
+        walkDiff.setVisibility(View.GONE);
+        walkFormat.setVisibility(View.GONE);
+        walkLength.setVisibility(View.GONE);
 
 
 

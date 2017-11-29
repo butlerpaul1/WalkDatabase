@@ -37,7 +37,7 @@
             android:id="@+id/add_walk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_walk_name"
+            android:hint="@string/add_county"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true" />
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@color/colorPrimary"
-            android:text="@string/btn_add_walk"
+            android:text="@string/add_county"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
     </LinearLayout>

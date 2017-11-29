@@ -34,7 +34,6 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-
         <Button
             android:id="@+id/view_walks"
             style="?android:textAppearanceSmall"
@@ -42,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@color/colorPrimary"
-            android:text="@string/btn_view_walks"
+            android:text="@string/view_county"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -88,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@color/colorPrimary"
-            android:text="@string/btn_add_walk"
+            android:text="@string/add_county"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 

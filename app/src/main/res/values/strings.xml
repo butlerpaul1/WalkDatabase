@@ -41,6 +41,12 @@
     <string name="btn_view_suggested_walks">View Suggested Walks</string>
     <string name="btn_add_walk">Add Walk</string>
 
+    <string name="add_county">Add County</string>
+    <string name="view_county">View Counties</string>
+
+
+
+
     <string name="hint_walk_name">Add Walk Name</string>
     <string name="hint_walk_format">Add Walk Format</string>
     <string name="hint_walk_diff">Add Walk Diffuctly</string>
