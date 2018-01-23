@@ -3,9 +3,12 @@ package com.example.paul.walkdatabase;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,7 +42,6 @@ public class AddWalk extends AppCompatActivity {
 
 
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -60,6 +62,33 @@ public class AddWalk extends AppCompatActivity {
         walkDiff.setVisibility(View.GONE);
         walkFormat.setVisibility(View.GONE);
         walkLength.setVisibility(View.GONE);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNav_View);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(0);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch(item.getItemId()){
+                    case R.id.nav_Home:
+                        startActivity(new Intent(AddWalk.this, MainActivity.class));
+
+                        break;
+
+                    case R.id.nav_View:
+                        startActivity(new Intent(AddWalk.this, ViewWalks.class));
+                        break;
+
+                    case R.id.nav_Add:
+                        startActivity(new Intent(AddWalk.this, AddWalk.class));
+                        break;
+                }
+
+                return false;
+            }
+        });
 
 
 
